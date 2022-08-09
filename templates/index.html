@@ -1,0 +1,9 @@
+﻿{%extends 'base.html'%}
+{%block app_content %}
+<form action="/" method="POST">
+	<input placeholder="height"  type="number" name="height"  min='1'>
+	<input placeholder="width" type="number" name="width"  min='1'>
+	<input type="submit" name="button">
+</form>
+<a class="btn btn-primary" href="{{ url_for('live') }}">Создать жизнь</a>
+{%endblock%}

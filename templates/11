@@ -1,0 +1,17 @@
+﻿<table class="world">
+
+        for i in range(len(universe)):
+            for j in range(len(universe[0])):
+
+{% for i in range(g.world|length) %}
+<tr>
+{% for j in range(g.world|first|length) %}
+{% if g.world[i][j] == 1 %}
+<td class="cell living-cell"></td>
+{% else %}
+<td class="cell"></td>
+{% endif %}
+{% endfor %}
+</tr>
+{% endfor%}
+</table>
