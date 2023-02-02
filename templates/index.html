@@ -1,9 +1,11 @@
-﻿{%extends 'base.html'%}
-{%block app_content %}
-<form action="/" method="POST">
-	<input placeholder="height"  type="number" name="height"  min='1'>
-	<input placeholder="width" type="number" name="width"  min='1'>
-	<input type="submit" name="button">
-</form>
+{% extends 'base.html' %}
+{% block app_content %}
+    <form action="/" method="POST">
+        <input placeholder="height" type="number" name="height" min='1'>
+        <input placeholder="width" type="number" name="width" min='1'>
+        <input type="submit" class="btn btn-primary" name="button">
+    </form>
+    <!-- От этой кнопки можно избавиться
 <a class="btn btn-primary" href="{{ url_for('live') }}">Создать жизнь</a>
-{%endblock%}
+-->
+{% endblock %}
